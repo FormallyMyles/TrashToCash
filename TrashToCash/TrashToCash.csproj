@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<Authors>FormallyMyles</Authors>
+		<Company>FormallyMyles</Company>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<!-- Your plateup game folder goes here -->
+		<PlateUpFolder>G:\SteamLibrary\steamapps\common\PlateUp\PlateUp</PlateUpFolder>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Reference Include="Kitchen.Common">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Kitchen.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Kitchen.GameData">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Kitchen.GameData.dll</HintPath>
+		</Reference>
+		<Reference Include="Kitchen.RestaurantMode">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Kitchen.RestaurantMode.dll</HintPath>
+		</Reference>
+		<Reference Include="KitchenMode">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\KitchenMode.dll</HintPath>
+		</Reference>
+		<Reference Include="KitchenMods">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\KitchenMods.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Entities">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Unity.Entities.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Serialization">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Sirenix.Serialization.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HarmonyX" Version="2.10.1" />
+	</ItemGroup>
+
+</Project>
