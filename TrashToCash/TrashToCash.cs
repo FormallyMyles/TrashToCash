@@ -1,5 +1,4 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Kitchen;
 using KitchenData;
 using KitchenMods;
@@ -14,11 +13,6 @@ namespace TrashToCash
         
         // Local variables
         private Harmony _harmony;
-
-        public static int GetSellPrice(int applianceID)
-        {
-            return (int) Math.Floor(Appliance.GetPrice(GameData.Main.Get<Appliance>(applianceID).PriceTier) / 2D);
-        }
 
         protected override void Initialise()
         {

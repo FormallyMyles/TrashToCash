@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using Kitchen;
-using KitchenData;
 
 namespace TrashToCash.Patches
 {

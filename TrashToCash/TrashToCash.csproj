@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
 		<Authors>FormallyMyles</Authors>
 		<Company>FormallyMyles</Company>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
-		<FileVersion>1.0.0</FileVersion>
+		<AssemblyVersion>1.1.0</AssemblyVersion>
+		<FileVersion>1.1.0</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -49,6 +49,12 @@
 		</Reference>
 		<Reference Include="Sirenix.Serialization">
 			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\Sirenix.Serialization.dll</HintPath>
+		</Reference>
+		<Reference Include="MessagePack">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\MessagePack.dll</HintPath>
+		</Reference>
+		<Reference Include="MessagePack.Annotations">
+			<HintPath>$(PlateUpFolder)\PlateUp_Data\Managed\MessagePack.Annotations.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 

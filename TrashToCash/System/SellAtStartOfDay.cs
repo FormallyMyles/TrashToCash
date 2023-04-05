@@ -16,11 +16,12 @@ namespace TrashToCash.System
             base.Initialise();
 
             // We only allow appliances which can be held to be sold
-            _appliances = GetEntityQuery(new QueryHelper().All(typeof(CDestroyApplianceAtDay), typeof(CItemHolder)));
+            _appliances = GetEntityQuery(new QueryHelper().All(typeof(CDestroyApplianceAtDay), typeof(CItemHolder)).None(typeof(CApplyDecor)));
         }
 
         protected override void OnUpdate()
         {
+            
             var totalSold = 0;
             var appliances = _appliances.ToEntityArray(Allocator.Temp);
             try
@@ -29,10 +30,11 @@ namespace TrashToCash.System
                 {
                     // Get the value to sell for
                     var applianceData = EntityManager.GetComponentData<CAppliance>(appliance);
-                    Debug.Log("Sold " + applianceData.ID + " for " + TrashToCash.GetSellPrice(applianceData.ID));
+                    var price = PriceUpdater.GetSellPrice(EntityManager, applianceData.ID);
+                    Debug.Log("Sold " + applianceData.ID + " for " + price);
 
                     // Add to the total
-                    totalSold += TrashToCash.GetSellPrice(applianceData.ID);
+                    totalSold += price;
                     
                     // Destroy the entity
                     EntityManager.DestroyEntity(appliance);
