@@ -8,7 +8,7 @@ Features:
 - Items will display the value you will get when they are put out for the trash.
 - After the round is over it will display how much TrashToCash made you (you'll be rich!)
 
-Multiplayer Compatibility: This mod is only required on the host, when using the mod when you're not the host it will display the prices but you won't receive money (so convince your friends to get the mod so you can make more money!!).
+Multiplayer Compatibility: This mod is only required on the host, when using the mod when you're not the host you won't receive money (so convince your friends to get the mod so you can make more money!!).
 
 Mod Compatibility: This mod should work with most mods, it has been tested with several of the most popular mods. If you have issues please comment so we can inform others / look into resolving it.
 
